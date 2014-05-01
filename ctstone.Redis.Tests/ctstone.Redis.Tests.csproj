@@ -69,6 +69,8 @@
     <Compile Include="RedisTestKeys.cs" />
     <Compile Include="RedisClientAsyncTests\GeneralTests.cs" />
     <Compile Include="RedisClientTests\GeneralTests.cs" />
+    <Compile Include="Sentinel\RedisSentinelClientTests.cs" />
+    <Compile Include="Sentinel\RedisSentinelManagerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ctstone.Redis\ctstone.Redis.csproj">
@@ -77,9 +79,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
   </ItemGroup>
-  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
